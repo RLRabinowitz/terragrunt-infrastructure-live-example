@@ -4,9 +4,9 @@ deploy:
   steps:
     terraformPlan:
       after: 
-        - ls -l
+        - ls -la
         - pwd
     terraformApply:
       before:
-        - ls -l
+        - ls -la
         - pwd
