@@ -6,7 +6,6 @@ deploy:
       after: 
         - ls -la
         - pwd
-        - rm -rf .terragrunt-cache
     terraformApply:
       before:
         - ls -la
