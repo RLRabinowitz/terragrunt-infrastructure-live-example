@@ -1,0 +1,12 @@
+version: 1
+
+deploy:
+  steps:
+    terraformPlan:
+      after: 
+        - ls -l
+        - pwd
+    terraformApply:
+      before:
+        - ls -l
+        - pwd
